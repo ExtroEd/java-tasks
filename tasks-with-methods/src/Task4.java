@@ -5,7 +5,7 @@ public class Task4 {
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
 
-            if (ch == 'а' || ch == 'е' || ch == 'ё') {
+            if (ch == 'а' || ch == 'е' || ch == 'ё' || ch == 'о' || ch == 'у' || ch == 'ы' || ch == 'э' || ch == 'я' || ch == 'ю' || ch == 'и') {
                 vowels++;
             }
         }
@@ -16,8 +16,6 @@ public class Task4 {
     public static void main(String[] args) {
         String sentence = "Привет";
 
-        System.out.println("Количество гласных" + countVowels(sentence));
+        System.out.println("Количество гласных: " + countVowels(sentence));
     }
 }
-
-// Нужно доделать
